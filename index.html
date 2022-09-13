@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset=”utf-8”/>
+        <!--make sure to include>> @charset "UTF-8"; << in CSS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--    ^responsive meta tag    -->
+        <title>Crochet Counter App</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lacquer&family=Luxurious+Roman&family=Rampart+One&family=Spline+Sans+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="img/knitting-logo.png" alt="Drawing of ball of yarn and knitting needles">
+            <h1>Crochet Counter</h1>
+        </header>
+
+        <div class="background-container">
+            <section>
+                <div class="stitch-container">
+                    <div class="count">
+                        <h2>Stitch Number:</h2>
+                        <h3 class="stitch-count">0</h3>
+                    </div>
+                    <div class="buttons">
+                        <button class="stitch-btn" onclick="stitchClick()">+</button>
+                        <button class="stitch-reset" onclick="stitchResetClick()">RESET</button>
+                    </div>
+                </div>
+            </section> <!--end of stitch section-->
+
+            <section>
+                <div class="row-container">
+                    <div class="count">
+                        <h2>Row Number:</h2>
+                        <h3 class="row-count">0</h3>
+                    </div>
+                    <div class="row-buttons">
+                        <button class="row-btn" onclick="rowClick()">+</button>
+                        <button class="row-reset" onclick="rowResetClick()">RESET</button>
+                    </div>
+                </div>
+
+                <div class="save-progress">
+                    <button class="save-btn" onclick="saveButtonClick()">SAVE MY PROGRESS</button>
+                </div>
+            </section> <!--end of row section-->
+
+            <div class="progress">
+                <h3 class="progress-update hide">
+                </h3>
+                <button class="done hide" onclick="doneClick()">Done</button>
+            </div> <!--end of progress container-->
+        </div> <!--end of background container-->
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset=”utf-8”>
+        <!--make sure to include>> @charset "UTF-8"; << in CSS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--    ^responsive meta tag    -->
+        <title>Practice</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lacquer&family=Luxurious+Roman&family=Rampart+One&family=Spline+Sans+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+        <script src="js/practice.js" defer></script>
+    </head>
+
+    <body>
+        <div class="font-tests">
+            <h1>Font Tests</h1>
+            <p class="bebas">Bebas Neue regular 400</p>
+            <p class="roman">Luxurious Roman regular 400</p>
+            <p class="rampart">Rampart One regular 400</p>
+            <p class="spline">Spline Sans Mono 
+                <span class="light">light,</span>
+                regular, and 
+                <span class="medium">medium.</span></p>
+            <p class="lacquer">Lacquer regular 400</p>
+        </div>
+
+        <style>
+            .bebas{
+                font-family: 'Bebas Neue', cursive;
+                font-size: 20px;
+            }
+
+            .roman {
+                font-family: 'Luxurious Roman', cursive;
+            }
+
+            .rampart {
+                font-family: 'Rampart One', cursive;
+            }
+
+            .spline {
+                font-family: 'Spline Sans Mono', monospace;
+            }
+
+            .spline .light {
+                font-weight: 300;
+            }
+
+            .spline .medium {
+                font-weight: 500;
+            }
+        </style>
+
+    </body>

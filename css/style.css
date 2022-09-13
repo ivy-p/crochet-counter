@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive, Arial, Helvetica, sans-serif;
+}
+
+/*HEADER STYLES*/
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #90BAAD;
+}
+
+header img {
+    width: 30%;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*BACKGROUND IMAGE*/
+.background-container {
+    padding-top: 30px;
+    background-image: linear-gradient(#717C89, #535353);
+    background-size: cover;
+}
+
+/*COUNTING SECTION*/
+.stitch-container,
+.row-container {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.count h2 {
+    font-size: 2.25rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #F1F7ED;
+}
+
+.count h3 {
+    color: #F1F7ED;
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+.buttons, 
+.row-buttons {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.stitch-btn,
+.stitch-reset,
+.row-btn,
+.row-reset{
+    background: #F1F7ED;
+    text-align: center;
+}
+
+.stitch-btn,
+.row-btn {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 60%;
+    border-radius: 8px;
+    border:#90BAAD 4px solid;
+    color: #90BAAD;
+}
+
+.stitch-reset,
+.row-reset {
+    font-size: 1.5rem;
+    width: 20%;
+    padding: 14px 0;
+    border-radius: 50%;
+    border:#90BAAD 4px solid;
+    color: #717C89;
+}
+
+.save-progress {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px 0;
+}
+
+.save-btn,
+.done {
+    font-size: 1.75rem;
+    padding: 10px 20px;
+    border: outset #90BAAD 3px;
+    background: #F1F7ED;
+    color: #90BAAD;
+}
+
+/*<div class="progress">
+                <h3 class="progress-update hide">
+                    example text
+                </h3>
+            </div>*/
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.progress-update {
+    color: #F1F7ED;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.copy-text {
+    margin-bottom: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+/*========TABLET STYLES=============*/
+@media only screen and (min-width: 768px){
+    /*HEADER SECTION*/
+    header {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    
+    header img {
+        width: 20%;
+        margin-left: 50px;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        margin-right: 75px;
+    }
+
+    /*COUNTING SECTION*/
+
+    .count {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .count h3 {
+        margin-right: 50px;
+    }
+}
+
+
+/*==========DESKTOP STYLES==============*/
+@media only screen and (min-width: 1200px){
+    /*HEADER SECTION*/
+    header img {
+        width: 15%;
+    }
+
+    /*COUNTING SECTION */
+    .stitch-container,
+    .row-container {
+        flex-flow: row nowrap;
+        justify-content:space-between;
+    }
+    
+    .count {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .buttons,
+    .row-buttons {
+        flex-flow: column nowrap;
+        flex: 1;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .stitch-reset,
+    .row-reset {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+}
