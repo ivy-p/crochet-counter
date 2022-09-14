@@ -2,23 +2,25 @@
 <html lang="en">
     <head>
         <meta charset=”utf-8”/>
-        <!--make sure to include>> @charset "UTF-8"; << in CSS-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--    ^responsive meta tag    -->
         <title>Crochet Counter App</title>
+        <!--Font options below, not set it stone-->
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lacquer&family=Luxurious+Roman&family=Rampart+One&family=Spline+Sans+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+        <!--Links to JS and CSS-->
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js" defer></script>
     </head>
 
     <body>
         <header>
-            <img src="img/knitting-logo.png" alt="Drawing of ball of yarn and knitting needles">
+            <img src="img/knitting-logo.png" alt="Ball of yarn and knitting needles">
             <h1>Crochet Counter</h1>
         </header>
 
+        <!--Creating a div here so the background is seamless between these sections-->
         <div class="background-container">
             <section>
+                <!--Stitch Counter Tool-->
                 <div class="stitch-container">
                     <div class="count">
                         <h2>Stitch Number:</h2>
@@ -32,6 +34,7 @@
             </section> <!--end of stitch section-->
 
             <section>
+                <!--Row Counter Tool-->
                 <div class="row-container">
                     <div class="count">
                         <h2>Row Number:</h2>
@@ -43,11 +46,14 @@
                     </div>
                 </div>
 
+                <!--Save Progress Section-->
                 <div class="save-progress">
                     <button class="save-btn" onclick="saveButtonClick()">SAVE MY PROGRESS</button>
                 </div>
+
             </section> <!--end of row section-->
 
+            <!--Progress Summary (to show up after save button is pressed)-->
             <div class="progress">
                 <h3 class="progress-update hide">
                 </h3>

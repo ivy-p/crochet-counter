@@ -1,3 +1,6 @@
+@charset "UTF-8";
+
+/*  BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -27,11 +30,11 @@ header h1 {
 /*BACKGROUND IMAGE*/
 .background-container {
     padding-top: 30px;
-    background-image: linear-gradient(#717C89, #535353);
+    background-image: linear-gradient(#717C89, #002B21);
     background-size: cover;
 }
 
-/*COUNTING SECTION*/
+/*STITCH AND ROW COUNTER TEXT*/
 .stitch-container,
 .row-container {
     width: 90%;
@@ -62,6 +65,7 @@ header h1 {
     margin: 10px 0;
 }
 
+/*STITCH & ROW COUNTER BUTTONS*/
 .buttons, 
 .row-buttons {
     display: flex;
@@ -93,13 +97,14 @@ header h1 {
 .stitch-reset,
 .row-reset {
     font-size: 1.5rem;
-    width: 20%;
-    padding: 14px 0;
+    
+    padding: 14px 5px;
     border-radius: 50%;
     border:#90BAAD 4px solid;
     color: #717C89;
 }
 
+/*SAVE PROGRESS FEATURE*/
 .save-progress {
     display: flex;
     width: 100%;
@@ -116,12 +121,6 @@ header h1 {
     background: #F1F7ED;
     color: #90BAAD;
 }
-
-/*<div class="progress">
-                <h3 class="progress-update hide">
-                    example text
-                </h3>
-            </div>*/
 
 .progress {
     display: flex;
@@ -140,16 +139,15 @@ header h1 {
     text-align: center;
 }
 
-.copy-text {
-    margin-bottom: 40px;
-}
-
+/*HIDE CLASS FOR JAVASCRIPT*/
 .hide {
     display: none;
 }
 
+
 /*========TABLET STYLES=============*/
 @media only screen and (min-width: 768px){
+    
     /*HEADER SECTION*/
     header {
         flex-flow: row;
@@ -183,6 +181,7 @@ header h1 {
 
 /*==========DESKTOP STYLES==============*/
 @media only screen and (min-width: 1200px){
+
     /*HEADER SECTION*/
     header img {
         width: 15%;
@@ -201,6 +200,7 @@ header h1 {
         flex: 1;
     }
 
+    /*BUTTONS*/
     .buttons,
     .row-buttons {
         flex-flow: column nowrap;
