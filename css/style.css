@@ -4,8 +4,16 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding-bottom: 200px;
+    background-color: #45425A;
+}
+
+html {
     font-size: 16px;
-    font-family: 'Bebas Neue', cursive, Arial, Helvetica, sans-serif;
 }
 
 /*HEADER STYLES*/
@@ -25,12 +33,14 @@ header h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #45425A;
 }
 
 /*BACKGROUND IMAGE*/
 .background-container {
     padding-top: 30px;
-    background-image: linear-gradient(#717C89, #002B21);
+    background-color: #45425A;
     background-size: cover;
 }
 
@@ -55,8 +65,8 @@ header h1 {
 
 .count h2 {
     font-size: 2.25rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     color: #F1F7ED;
+    font-family: 'Lato', sans-serif;
 }
 
 .count h3 {
@@ -80,7 +90,7 @@ header h1 {
 .stitch-reset,
 .row-btn,
 .row-reset{
-    background: #F1F7ED;
+    background: #90BAAD;
     text-align: center;
 }
 
@@ -90,18 +100,22 @@ header h1 {
     line-height: 4rem;
     width: 60%;
     border-radius: 8px;
-    border:#90BAAD 4px solid;
-    color: #90BAAD;
+    border:white 4px solid;
+    color: #45425A;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .stitch-reset,
 .row-reset {
     font-size: 1.5rem;
-    
+    width: 90px;
+    height: 90px;
     padding: 14px 5px;
     border-radius: 50%;
-    border:#90BAAD 4px solid;
-    color: #717C89;
+    border:white 4px solid;
+    color: #45425A;
+    font-weight: bold;
 }
 
 /*SAVE PROGRESS FEATURE*/
@@ -117,9 +131,11 @@ header h1 {
 .done {
     font-size: 1.75rem;
     padding: 10px 20px;
-    border: outset #90BAAD 3px;
-    background: #F1F7ED;
-    color: #90BAAD;
+    border: outset white 3px;
+    background: #90BAAD;
+    color: #45425A;
+    font-weight: bold;
+
 }
 
 .progress {
@@ -133,7 +149,6 @@ header h1 {
 
 .progress-update {
     color: #F1F7ED;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2rem;
     margin-bottom: 40px;
     text-align: center;
@@ -163,6 +178,7 @@ header h1 {
         font-size: 3.5rem;
         margin-bottom: 0;
         margin-right: 75px;
+        text-align: right;
     }
 
     /*COUNTING SECTION*/
